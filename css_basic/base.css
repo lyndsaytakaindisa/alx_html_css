@@ -63,8 +63,7 @@ body {
 h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
-article {
-}
+
 header {
 	border-bottom: 1px solid rgb(221,221,221);
 	transition: border-bottom-color 1s ease;
@@ -73,25 +72,7 @@ header * {
 	color: rgba(0, 0, 0, 0.8);
 }
 
-header .logo{
-    font-size :25px;
-    color:orangered;
-    font-weight:600;
-    transition:0.3s ease;
-}
-header .logo-text{
-    color:black;
-}
-.logo-text:hover
-{
-    color:orangered;
-    text-shadow:0 0 25px orangered,
-                0 0 50px orangered;
-    transform:scale(1.1);
-}
-span{
-    color :orangered;
-}
+
 aside {
 	background: #FAFAFA;
 }
@@ -101,15 +82,9 @@ aside p {
 	color: black;
 }
 footer a{
-    color:cornsilk;
-}
-a{
-    color:#283618;
+    color:black;
 }
 
-a:hover{
-    text-decoration: underline;
-}
 
 
 /* Positioning and margins */
@@ -180,14 +155,8 @@ aside p {
 footer {
 	padding: 5px 15px;
 	height: 80px;
+	color:black;
 }
-
-
-
-footer a:hover{
-    color:orangered;
-}
-
 
 
 /* Text styles and margins */

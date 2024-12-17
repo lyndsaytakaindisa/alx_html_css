@@ -9,6 +9,34 @@ main{
     flex: auto;
 }
 
+header .logo{
+    font-size :25px;
+    color:orangered;
+    font-weight:600;
+    transition:0.3s ease;
+}
+header .logo-text{
+    color:black;
+}
+.logo-text:hover
+{
+    color:orangered;
+    text-shadow:0 0 25px orangered,
+                0 0 50px orangered;
+    transform:scale(1.1);
+}
+span{
+    color :orangered;
+}
+
+a{
+    color:#283618;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 article{
     flex:2;
     overflow-y:auto;
@@ -17,4 +45,8 @@ article{
 aside{
     flex:1;
     overflow-y:auto;
+}
+
+footer a:hover{
+    color:orangered;
 }
