@@ -1,0 +1,466 @@
+/* font used for the whole website*/
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*setting up the background image and the dimensions*/
+.background_image {
+    background-image: url('photos/Object.png');
+    background-size: cover;
+    width: 1440px;
+    height: 1093px;
+    padding-top: 50px;
+}
+/*adjusting the header and the specified dimensions*/
+header {
+    margin-top: 5px;
+    background: transparent;
+    height: 29.46px;
+    width: 1103.41px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header * {
+    color: white;
+}
+
+/* Adjustment of the content in the header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1103.41px;
+    height: 29.46px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    width: 50px;
+    height: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: #c271ff;
+    text-shadow: 0 0 25px #c271ff, 0 0 50px #c271ff;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+/* Adjusting the content to go to center and be stacked vertically */
+.index {
+    color: #ffffff;
+    text-align: center; 
+}
+
+.index h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.index .text-line {
+    display: inline-block;
+    margin: 5px;
+}
+
+.index span {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.index button {
+    margin: 20px auto 0;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #c271ff;
+    display: block;
+    text-align: center;
+}
+
+.index button:hover {
+    color: black;
+    text-shadow: 0 0 25px black, 0 0 50px black;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+/* Code for the pros */
+.learn_from_pros h2 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.learn_from_pros span {
+    color: #c271ff;
+    font-weight: bold;
+}
+
+.learn_from_pros .the_pros {
+    color: #ffffff;
+    width: 1009px;
+    height: 237px;
+    margin: 0 auto;
+    margin-top: 150px;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 50px;
+}
+
+.learn_from_pros .the_pros .friend_smile {
+    border-radius: 50%;
+}
+
+/* Tutorials section */
+.tutorials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 392px;
+    background-color: #c271ff;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.tutorials .presenter {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 943px;
+    margin: 0 auto;
+}
+
+.tutorials .presenter > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tutorials .presenter img {
+    margin-right: 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.tutorials .presenter blockquote {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 40px;
+    font-weight: 50;
+}
+
+.tutorials .presenter h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 0.5px;
+}
+
+.tutorials .presenter p {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 0.05px;
+}
+
+.videos {
+    padding: 20px;
+    text-align: center;
+}
+
+.tutorial_videos {
+    color: black;
+    width: 1228px;
+    height: 450px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.tutorial_videos h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tutorial_videos span {
+    color: #c271ff;
+    font-weight: bold;
+}
+
+/* Adjustment for all boxes */
+.box1, .box2, .box3, .box4 {
+    width: 255px;
+    height: 335px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    display: flex;
+}
+/*adjustment of the player button and the background image*/
+.play {
+    position: relative; 
+    width: 100%; /* Adjust to the container width */
+    height: auto; 
+}
+
+.play img:first-child {
+    width: 100%; 
+    height: auto; 
+}
+
+.play img:nth-child(2) { /* Targets the play button */
+    position: absolute;
+    top: 50%; /* Vertically centers the button */
+    left: 50%; /* Horizontally centers the button */
+    transform: translate(-50%, -50%); /* Corrects centering alignment */
+    width: 50px; /* Adjust the button size */
+    height: 50px; /* Adjust the button size */
+    cursor: pointer; /* Changes the cursor to indicate interactivity */
+}
+
+.approval {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.approval h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.phillip {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.rating_smiles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5px;
+}
+
+.rating {
+    width: 100px;
+}
+
+.time {
+    color: #c271ff;
+    font-size: 14px;
+}
+
+/* Membership section */
+.membership {
+    background-color: #071629;
+    padding: 20px;
+    text-align: center;
+}
+
+.quotations {
+    color: #ffffff;
+    width: 1228px;
+    height: 450px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.membership span {
+    color: #c271ff;
+    font-weight: bolder;
+}
+
+.quote1, .quote2, .quote3, .quote4 {
+    width: 257px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.quote1 img, .quote2 img, .quote3 img, .quote4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.register {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.register button {
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #c271ff;
+    border: none;
+    cursor: pointer;
+}
+
+.register button:hover {
+    color: black;
+    text-shadow: 0 0 25px black, 0 0 50px black;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+/*section for the FAQ*/
+.questions{
+    width:1440px;
+    height:800px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frequent_questions{ 
+    width:920px;
+    height:707px;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    align-items: center;
+    justify-content: center ;
+}
+
+.frequent_questions h2{
+    font-size: 60px;
+    align-items: center;
+    font-weight:100;
+    margin-bottom: 40px;
+}
+.frequent_questions h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.content{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+       
+}
+.function p { 
+    font-size: 14px; 
+    line-height: 1.5; 
+}
+
+.function{
+    width: 45%; 
+    background-color: #fff; 
+    color: #000; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    
+}
+
+footer{
+    background-color: #071629;
+    width:1440px;
+    height:249px;
+
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1103.41px;
+    height: 29.46px;
+}
+.icons{
+    margin-top: 20px;
+    display:flex;
+    gap:20px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.icons i{
+    font-size: 24px; 
+    color: white;  
+    border: 2px solid white;
+    width: 40px; 
+    height: 40px; 
+    line-height: 38px; 
+    display: inline-block; 
+    text-align: center; 
+    border-radius: 50%; 
+    margin: 0 8px; 
+    
+    
+}
+.icons i:hover{
+    transform:scale(1.2)translateY(-10px);
+    color:#FFFFFF;
+    box-shadow: inset 0 0 10px white, 0 0 10px white;
+}
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+}
