@@ -1,0 +1,327 @@
+/*font for the website*/
+*{
+    font-family : 'Source Sans Pro',sans-serif;
+}
+/*setup of the background image as well as the specific dimensions*/
+.background_image{
+    background-image:url('images/headphones_hero_1.jpg');
+    background-size:cover;
+    width:1400px;
+    height:1000px;
+}
+
+/*adjustments for the header*/
+header {
+    margin-top: 0px;
+    height: 50px;
+    width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+/*content inside the header*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+
+}
+
+nav img{
+    width:160;
+    height:33px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white ;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: #ff6565;
+    text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.main{
+    color:#FFFFFF;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.main h1{
+    font-size: 32px;
+    font-weight: bold;
+    display:block; 
+    margin-bottom: 5px;
+}
+
+.main h6{
+    margin-top:0;
+    font-size: 16px;
+    font-weight: bold;
+    display:block;
+}
+
+.main p{
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: lighter;
+}
+/*code for the call to action button*/
+.main button {
+    margin: 20px auto 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ff6565;
+    display: block;
+    text-align: center;
+}
+
+.main button:hover {
+    opacity:0.9;
+    text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+/*--------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+/*section for the audio equipments*/
+.what_we_do{
+    width:1400px;
+    height:600px;
+    background-color: #FFFFFF;
+}
+
+.what_we_do h1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.what_we_do p{
+    margin-top:30px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+.icons {
+    color: black;
+    width: 1228px;
+    height: auto; 
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+    gap: 20px; 
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    width: 257px;
+    padding: 15px;
+    text-align: center;
+    margin: 0; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 200px; 
+}
+
+.icon1 img, .icon2 img, .icon3 img, .icon4 img {
+    max-width: 100%;
+    height: 100px; 
+    object-fit: contain; 
+    margin-bottom: 5px;
+}
+
+.icons p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*section for our results*/
+.our_results{
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height:650px;
+    color:#FFFFFF;
+}
+
+.our_results h2{
+    margin-top: 200px;
+    margin-bottom: 0;
+    font-size: 32px;
+    
+}
+
+.our_results p{
+    margin-top: 30px;
+    
+}
+
+.results {
+    color: black;
+    width: 1000px;
+    height: 450px;
+    margin-top:50px;
+    justify-content: space-between;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.result1, .result2, .result3, .result4 {
+    width: 190px;
+    height:190px;
+    position:relative;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.result1 img, .result2 img, .result3 img, .result4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.result1 h1 , .result2 h1, .result3 h1, .result4 h1 {
+    margin:0;
+    position :absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    transform:translate(-50%,-50%);
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.result1 h2 , .result2 h2, .result3 h2, .result4 h2 {
+    margin-top:50px;
+    position :absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    transform:translate(-50%,-50%);
+    font-size: 14px;
+    width:100%;
+    font-weight: normal;
+    line-height: 26px ;
+    
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*section for contact_us*/
+.contact_us{
+    width:100%;
+    height:650px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:30px;
+    width: 330px;
+    height:450px;
+   
+}
+
+.form h1{
+    text-align: center;
+    font-weight:bold ;
+    margin-bottom: 30px;
+}
+
+.input, .textarea{
+    width:calc(100% - 10px);
+    padding:8px;
+    border:none;
+    border-bottom: 2px dotted  black;
+    color:black;
+    font-size: 18px;
+    outline:none;
+    margin-bottom: 0;
+    
+    
+    
+}
+
+.input:focus , .textarea:focus{
+    border-bottom:2px dotted black ;
+    color :black;
+    
+    
+}
+
+.input ::placeholder , .textarea::placeholder{
+    transform: 0.2s;
+   
+}
+
+.form button{
+    margin: 20px auto 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ff6565;
+   /* display: block;*/
+    text-align: center;
+}
+
+.form button:hover {
+    opacity:0.9;
+    text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}

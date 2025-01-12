@@ -1,0 +1,177 @@
+/*font for the website*/
+*{
+    font-family : 'Source Sans Pro',sans-serif;
+}
+/*setup of the background image as well as the specific dimensions*/
+.background_image{
+    background-image:url('images/headphones_hero_1.jpg');
+    background-size:cover;
+    width:1400px;
+    height:1000px;
+}
+
+/*adjustments for the header*/
+header {
+    margin-top: 0px;
+    height: 50px;
+    width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+/*content inside the header*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+
+}
+
+nav img{
+    width:160;
+    height:33px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white ;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: #ff6565;
+    text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.main{
+    color:#FFFFFF;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.main h1{
+    font-size: 32px;
+    font-weight: bold;
+    display:block; 
+    margin-bottom: 5px;
+}
+
+.main h6{
+    margin-top:0;
+    font-size: 16px;
+    font-weight: bold;
+    display:block;
+}
+
+.main p{
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: lighter;
+}
+/*code for the call to action button*/
+.main button {
+    margin: 20px auto 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ff6565;
+    display: block;
+    text-align: center;
+}
+
+.main button:hover {
+    opacity:0.9;
+    text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+/*--------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+/*section for the audio equipments*/
+.what_we_do{
+    width:1400px;
+    height:600px;
+    background-color: #FFFFFF;
+}
+
+.what_we_do h1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.what_we_do p{
+    margin-top:30px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+.icons {
+    color: black;
+    width: 1228px;
+    height: auto; 
+    margin: 0 auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+    gap: 20px; 
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    width: 257px;
+    padding: 15px;
+    text-align: center;
+    margin: 0; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 200px; 
+}
+
+.icon1 img, .icon2 img, .icon3 img, .icon4 img {
+    max-width: 100%;
+    height: 100px; 
+    object-fit: contain; 
+    margin-bottom: 5px;
+}
+
+.icons p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
