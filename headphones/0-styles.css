@@ -166,7 +166,7 @@ nav ul li a:hover {
 }
 
 /* Media queries for responsiveness for different screen sizes */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .background_image {
         max-width: 100%;
         padding: 0 10px;
