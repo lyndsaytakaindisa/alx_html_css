@@ -1,41 +1,56 @@
-/*font for the website*/
-*{
-    font-family : 'Source Sans Pro',sans-serif;
-}
-/*setup of the background image as well as the specific dimensions*/
-.background_image{
-    background-image:url('images/headphones_hero_1.jpg');
-    background-size:cover;
-    width:1400px;
-    height:1000px;
+/*font for the website */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*adjustments for the header*/
+/* centering the content*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* background image and dimensions */
+.background_image {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 650px;
+    min-height: 100vh;
+}
+
+/* Adjustments for the header */
 header {
-    margin-top: 0px;
+    margin-top: 20px;
     height: 50px;
-    width: 1000px; 
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 800px; 
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 20px;
+    padding: 0 20px;
+    position: relative;
 }
 
-/*content inside the header*/
-nav{
-    display:flex;
+/* Header content */
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
-
+    width: 100%;
 }
 
-nav img{
-    width:160;
-    height:33px;
-    
+nav img {
+    width: 160px;
+    height: 33px;
 }
 
 nav ul {
@@ -48,12 +63,12 @@ nav ul {
 }
 
 nav ul li {
-    margin:0;
+    margin: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white ;
+    color: white;
     padding: 5px 10px;
     font-weight: bold;
     font-size: 12px;
@@ -66,33 +81,41 @@ nav ul li a:hover {
     transition: 0.5s ease;
 }
 
-.main{
-    color:#FFFFFF;
+/* Main content styling */
+.main {
+    color: #FFFFFF;
     text-align: center;
-    margin-top: 400px;
+    margin-bottom: 400px; 
+    padding: 0 20px; 
+    max-width: 1000px;
+    margin-top:250px;
+
 }
 
-.main h1{
+.main h1 {
     font-size: 32px;
     font-weight: bold;
-    display:block; 
-    margin-bottom: 5px;
+    display: block; 
+    margin-bottom: 20px;
 }
 
-.main h6{
-    margin-top:0;
+.main h6 {
+    margin-top: 0;
     font-size: 16px;
     font-weight: bold;
-    display:block;
+    display: block;
 }
 
-.main p{
+.main p {
     margin-bottom: 50px;
     font-size: 18px;
     line-height: 2;
+    align-items: center;
     font-weight: lighter;
+    text-align: center;
 }
-/*code for the call to action button*/
+
+/* Call-to-action button */
 .main button {
     margin: 20px auto 50px;
     padding: 15px 30px;
@@ -103,16 +126,136 @@ nav ul li a:hover {
     background-color: #ff6565;
     display: block;
     text-align: center;
+    border: none;
+    cursor: pointer;
 }
 
 .main button:hover {
-    opacity:0.9;
+    opacity: 0.9;
     text-shadow: 0 0 25px #ff6565, 0 0 50px #ff6565;
     transform: scale(1.1);
     transition: 0.5s ease;
 }
 
+.menu_icon, .exit{
+    position: absolute;
+    cursor:pointer;
+    font-size: 1.5rem;
+}
+.menu_icon {
+    transform: translateX(10%);
+    display:none;
+    left:0;
 
+}
+.exit{
+    top:10px;
+    left:10px;
+    display:none;
 
+}
+#check{
+    display:none;
+}
 
+#check:checked ~ .exit{
+    display:block;
+}
+#check:checked ~ .menu_icon{
+    display:none;
+}
 
+/* Media queries for responsiveness for different screen sizes */
+@media (max-width: 1024px) {
+    .background_image {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    .main button {
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    nav img {
+        width: 140px;
+        height: auto;
+    }
+
+    .main h1 {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .main button {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Show menu icon*/
+    .menu_icon  {
+        display: block;
+        margin-top: 10px;
+        
+    }
+
+    /* Centering the logo */
+    nav img  {
+        margin-top: 5px;
+        transform: translateX(70%);
+        
+
+    }
+
+    /*navigation links */
+    .navigation {
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:50%;
+        height:20vh;
+        position:fixed;
+        top:10%;
+        left:-400px;
+        z-index: 100;
+      
+        transition: all 0.2 ease-in-out;
+    }
+
+    .navigation li {
+        padding: 10px ;
+    }
+    #check:checked ~ .navigation{
+        left :100px;
+    }
+
+    
+}
