@@ -189,7 +189,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width:100%;
+    width:1400px;
     height:650px;
     color:#FFFFFF;
 }
@@ -360,7 +360,7 @@ nav ul li a:hover {
 /*section for the footer*/
 footer{
     background-color: #071629;
-    width:1440px;
+    width:1400px;
     height:249px;
     margin:0 auto; 
     display: flex;
